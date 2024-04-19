@@ -69,6 +69,7 @@ flutter:
     - assets/spots/spotslist/
     - assets/home/
     - assets/food/
+    - assets/hotel/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

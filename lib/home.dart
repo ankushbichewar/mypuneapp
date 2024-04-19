@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mypuneapp/food_page.dart';
+import 'package:mypuneapp/hotelpage.dart';
 import 'package:mypuneapp/profilePage.dart';
 import 'package:mypuneapp/spots.dart';
 import 'package:mypuneapp/model.dart';
@@ -184,8 +185,8 @@ class _HomeState extends State {
                       children: [
                         GestureDetector(
                           onTap: () {
-                    //         Navigator.push(
-                    // context, MaterialPageRoute(builder: (context) =>  const Hotel()));
+                            Navigator.push(
+                    context, MaterialPageRoute(builder: (context) =>  const Hotel()));
                           },
                           child: Column(
                             children: [

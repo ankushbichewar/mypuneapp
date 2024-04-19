@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
       "/login":(context)=> const Login(),
      },
       home:const  NewAccount(),
-      //home: Home(),
       debugShowCheckedModeBanner: false,
     ));
   }

@@ -255,3 +255,103 @@ List fooddata = [
     assetimage: "assets/food/p22.jpeg",
   ),
 ];
+
+//hotels list
+
+List hoteldata = [
+   const Info(
+    name:"Conrad Pune",
+    discription: "Just a short distance away from the Airport and located in the heart of Pune's vibrant city, Conrad Pune",
+    assetimage: "assets/hotel/p1.jpeg",
+  ),
+    const Info(
+    name:"JW Marriott Hotel Pune",
+    discription: "Experience award-winning service and sophisticated style at JW Marriott Hotel Pune",
+    assetimage: "assets/hotel/p2.jpeg",
+  ),
+    const Info(
+    name:"The Westin Pune Koregaon Park",
+    discription: "This property is a gem, distinguished by its outstanding hospitality and service",
+    assetimage: "assets/hotel/p3.jpg",
+  ),
+    const Info(
+    name:"Hyatt Regency Pune",
+    discription: "Nestled in the heart of Pune, Hyatt Regency Pune Hotel & Residences offers an urban retreat with tranquil surroundings and heartfelt hospitality.",
+    assetimage: "assets/hotel/p4.jpeg",
+  ),
+
+    const Info(
+    name:"Marriott Suites Pune",
+    discription: "Marriott Suites Pune is an all-suite pet-friendly hotel located in the Koregaon Park neighborhood. It is 3.4 mi from Pune International Airport",
+    assetimage: "assets/hotel/p5.jpeg",
+  ),
+    const Info(
+    name:"Radisson Blu Pune Hinjawadi",
+    discription: "Radisson Blu Hotel Hinjawadi Pune near Infotech Park and enjoy first-class amenities like on-site dining, free Wi-Fi, and in-room work stations.",
+    assetimage: "assets/hotel/p6.jpeg",
+  ),
+    const Info(
+    name:"DoubleTree by Hilton Pune Chinchwad",
+    discription: "Centrally located in Pune in the corporate hub of Chinchwad",
+    assetimage: "assets/hotel/p7.jpg",
+  ),
+
+    const Info(
+    name:"The O Hotel Pune",
+    discription: "O hotel Pune offers luxury boutique rooms with bathtub, swimming pool with sweeping city views, spa and rooftop restaurant just near the Pune airport.",
+    assetimage: "assets/hotel/p8.jpeg",
+  ),
+    const Info(
+    name:"Vivanta Pune, Hinjawadi",
+    discription: "Located at Pune's IT corridor, Vivanta Pune Hinjawadi is one of the best business hotels in Hinjawadi Pune.",
+    assetimage: "assets/hotel/p9.jpg",
+  ),
+  
+    const Info(
+    name:"Four Points by Sheraton Hotel & Serviced Apartments, Pune",
+    discription: "The property is located in a convenient location with good amenities and courteous staff. Rooms are spacious and well-maintained.",
+    assetimage: "assets/hotel/p10.jpg",
+  ),
+    const Info(
+    name:" Courtyard by Marriott Pune Hinjewadi",
+    discription: "Courtyard Marriott is located off the Mumbai-Pune Expressway, 1640 feet from the Rajiv Gandhi Infotech Park.",
+    assetimage: "assets/hotel/p11.jpeg",
+  ),
+    const Info(
+    name:"Crowne Plaza Pune City Centre",
+    discription: "The property is located in a prime location and has spacious rooms. The staff is courteous and helpful.",
+    assetimage: "assets/hotel/p12.jpg",
+  ),
+    const Info(
+    name:"Lemon Tree Premier, City Center, Pune",
+    discription: "Lemon Tree Premier, City Center, Pune is situated in the heart of the city, which is a hub for business, education and entertainment",
+    assetimage: "assets/hotel/p13.jpg",
+  ),
+ 
+    const Info(
+    name:"Ibis Pune Viman Nagar",
+    discription: "The property is located in a good locality near the airport and mall. The staff is polite and cooperative. The rooms are clean and well-maintained.",
+    assetimage: "assets/hotel/p14.jpg",
+  ),
+    const Info(
+    name:"Holiday Inn Pune Hinjewadi",
+    discription: "Holiday Inn Express Pune Hinjewadi is a modern hotel for value-oriented travellers and is centrally located in the business and IT hub of Pune.",
+    assetimage: "assets/hotel/p15.jpeg",
+  ),
+   const Info(
+    name:"The Ritz-Carlton, Pune",
+    discription: "The Ritz-Carlton, Pune is a 5-star luxury hotel with some of the city's largest guest rooms, a 24-hour restaurant, rooftop bar, full-service spa and more",
+    assetimage: "assets/hotel/p16.jpeg",
+  ),
+   const Info(
+    name:"St. Laurn Business Hotel",
+    discription: "St Laurn boasts a rooftop pool and fitness centre, and makes for a perfect stay in Pune's charming green neighbourhood. Food and Dining; Location & Surroundings.",
+    assetimage: "assets/hotel/p17.jpeg",
+  ),
+   const Info(
+    name:"Lemon Tree Hotel, Hinjawadi, Pune",
+    discription: "Business hotel in Hinjawadi, Pune located near Cognizant, Infosys and Symbiosis. Book direct to get exclusive deals, Free WiFi, Breakfast and Pay at Hotel",
+    assetimage: "assets/hotel/p18.jpeg",
+  ),
+  
+];

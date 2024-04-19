@@ -8,14 +8,14 @@ import 'package:mypuneapp/profilePage.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class MySpots extends StatefulWidget {
-  const MySpots({super.key});
+class Hotel extends StatefulWidget {
+  const Hotel({super.key});
 
   @override
-  State createState() => _MySpotsState();
+  State createState() => _MyHotelState();
 }
 
-class _MySpotsState extends State {
+class _MyHotelState extends State {
   String selectedspot = "select";
   List iconImage = [
     "assets/icons/auto.webp",
@@ -25,11 +25,11 @@ class _MySpotsState extends State {
     "assets/icons/st.png",
   ];
 
-  final spotsImage = [
-    Image.asset("assets/spots/dagadushet.jpg",),
-    Image.asset("assets/spots/katrajlake.jpg"),
-    Image.asset("assets/spots/okamaya.jpg"),
-    Image.asset("assets/spots/ramdara.jpg"),
+  final hotelImage = [
+    Image.asset("assets/hotel/hotel1.jpg",),
+    Image.asset("assets/hotel/hotel2.jpg"),
+    Image.asset("assets/hotel/hotel3.jpg"),
+    Image.asset("assets/hotel/p7.jpg"),
   ];
 
   int myCurrentIndex = 0;
@@ -207,7 +207,7 @@ class _MySpotsState extends State {
         automaticallyImplyLeading: false,
         backgroundColor: const Color.fromARGB(255, 248, 237, 210),
         title: const Text(
-          "Spots",
+          "Hotels",
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
         ),
       ),
@@ -235,7 +235,9 @@ class _MySpotsState extends State {
             ),
             BottomNavigationBarItem(
               icon: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  
+                },
                 child: const Icon(
                   Icons.mode_of_travel_rounded,
                   color: Colors.black,
@@ -283,7 +285,7 @@ class _MySpotsState extends State {
                 SizedBox(
                   height: MediaQuery.of(context).size.height,
                   child: ListView.builder(
-                      itemCount: spotsdata.length,
+                      itemCount: hoteldata.length,
                       itemBuilder: (context, index) {
                         return Column(
                           children: [
@@ -295,7 +297,7 @@ class _MySpotsState extends State {
                                         objdata.data=index;
                                         Navigator.push(context, 
                                         MaterialPageRoute(builder:
-                                         (context)=>const FullDetailSpots()));
+                                         (context)=>const FullDetailhotels()));
                                       });
                                     },
                                   child: Container(
@@ -319,7 +321,7 @@ class _MySpotsState extends State {
                                           CircleAvatar(
                                             radius: 50,
                                             backgroundImage: AssetImage(
-                                                "${spotsdata[index].assetimage}"),
+                                                "${hoteldata[index].assetimage}"),
                                           ),
                                           const SizedBox(
                                             width: 10,
@@ -332,7 +334,7 @@ class _MySpotsState extends State {
                                                 SizedBox(
                                                   width: 250,
                                                   child: Text(
-                                                    "${spotsdata[index].name}",
+                                                    "${hoteldata[index].name}",
                                                     textAlign: TextAlign.left,
                                                     style: const TextStyle(
                                                       fontSize: 20,
@@ -341,7 +343,7 @@ class _MySpotsState extends State {
                                                   ),
                                                 ),
                                                 Text(
-                                                  "${spotsdata[index].discription}",
+                                                  "${hoteldata[index].discription}",
                                                 )
                                               ],
                                             ),
@@ -392,11 +394,11 @@ class _MySpotsState extends State {
                       });
                     },
                   ),
-                  items: spotsImage,
+                  items: hotelImage,
                 ),
                 AnimatedSmoothIndicator(
                   activeIndex: myCurrentIndex,
-                  count: spotsImage.length,
+                  count: hotelImage.length,
                   effect: WormEffect(
                     dotHeight: 8,
                     dotWidth: 8,
@@ -438,7 +440,7 @@ class _MySpotsState extends State {
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 248, 237, 210)),
                 onPressed: () {
-                  _showspots();
+                 // _showspots();
                 },
                 child: const Text(
                   "Click To Explore",
@@ -581,33 +583,6 @@ class _MySpotsState extends State {
           const SizedBox(
             height: 20,
           ),
-
-          //Srearch destination Start
-        //  Container(
-        //     height: 200,
-        //     width: MediaQuery.of(context).size.width,
-        //     margin: const EdgeInsetsDirectional.all(13),
-        //     padding: const EdgeInsets.all(10),
-        //     color: const Color.fromARGB(255, 248, 237, 210),
-        //     child: Stack(
-        //       alignment: Alignment.center,
-        //       children: [          
-        //         Container(
-        //           alignment: Alignment.center,
-        //           width: MediaQuery.of(context).size.width,
-        //           color: Colors.white,
-        //           child: const Column(
-        //             children: [
-        //               // Image.asset(
-        //               //   "assets/icons/search.jpg",
-        //               //   width: MediaQuery.of(context).size.width,
-        //               // )
-        //             ],
-        //           ),
-        //         ),
-        //       ],
-        //     ),
-        //   )
         ]);
   }
 }

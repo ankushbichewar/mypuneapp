@@ -1,4 +1,4 @@
-// ignore_for_file: use_build_context_synchronously
+
 
 import 'package:flutter/material.dart';
 import 'package:mypuneapp/home.dart';
@@ -192,7 +192,7 @@ class _LoginState extends State {
                     width: 160,
                   ),
                   const Text(
-                    'Hello Again !',
+                    'Hello !!',
                     style: TextStyle(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
@@ -388,7 +388,7 @@ class _LoginState extends State {
                     children: [
                       Container(
                         height: 1.5,
-                        width: 90,
+                        width: 50,
                         decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
@@ -413,7 +413,7 @@ class _LoginState extends State {
                       ),
                       Container(
                         height: 1.5,
-                        width: 90,
+                        width: 50,
                         decoration: const BoxDecoration(
                           gradient: LinearGradient(
                             colors: [
@@ -443,13 +443,13 @@ class _LoginState extends State {
                               shape: BoxShape.circle,
                               color: Colors.amber,
                             ),
-                            height: 45,
-                            // width: 45,
-                            // child: Image.asset(
-                            //   "assets/google.jpeg",
-                            //   height: 20,
-                            //   width: 20,
-                            // ),
+                            height: 40,
+                            width: 40,
+                            child: Image.asset(
+                                "assets/icons/google.png",
+                                width: 20,
+                                height: 20,
+                              ),
                           ),
                         ),
                         GestureDetector(
@@ -460,11 +460,11 @@ class _LoginState extends State {
                             ),
                             height: 45,
                             width: 45,
-                            // child: Image.asset(
-                            //   "assets/facebook.jpeg",
-                            //   height: 20,
-                            //   width: 20,
-                            // ),
+                           child: Image.asset(
+                                "assets/icons/fasebook.png",
+                                height: 20,
+                                width: 20,
+                              ),
                           ),
                         ),
                         Container(
@@ -474,11 +474,12 @@ class _LoginState extends State {
                           ),
                           height: 42,
                           width: 42,
-                          // child: Image.asset(
-                          //   "assets/likdin.jpeg",
-                          //   height: 18,
-                          //   width: 20,
-                          // ),
+                          child: Image.asset(
+                                "assets/icons/x.png",
+                                fit: BoxFit.cover,
+                                height: 23,
+                                width: 23,
+                              ),
                         ),
                       ],
                     ),

@@ -121,8 +121,6 @@ class _EditProfilePageState extends State {
                 height: 35,
               ),
               buildTextField("Full Name", "Ankush Bichewar", false),
-              buildTextField("Institude",
-                  "Sinhgad Institute Of Technology And Science", false),
               buildTextField("Contact", "89******82", false),
               buildTextField("Password", "****", true),
               const SizedBox(
