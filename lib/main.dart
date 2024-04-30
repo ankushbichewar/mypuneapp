@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mypuneapp/detailscrren.dart';
-import 'package:mypuneapp/home.dart';
 import 'package:mypuneapp/inheritedfile.dart';
 import 'package:mypuneapp/loginpage.dart';
 import 'package:mypuneapp/signuppage.dart';

@@ -73,20 +73,13 @@ class _NewAccountState extends State {
   Widget build(BuildContext context) {
     return (accountCreated == false)
         ? Scaffold(
+          backgroundColor: const Color.fromARGB(255, 248, 237, 210),
             body: GestureDetector(
               onTap: () {
                 FocusScope.of(context).unfocus();
               },
               child: SingleChildScrollView(
                 child: Stack(children: [
-                  SizedBox(
-                    height: MediaQuery.sizeOf(context).height,
-                    width: MediaQuery.sizeOf(context).width,
-                    child: Image.asset(
-                      "assets/icons/bg.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                  ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -252,8 +245,8 @@ class _NewAccountState extends State {
                           ]),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    const Color.fromARGB(255, 248, 237, 210),
+                                // backgroundColor:
+                                //     const Color.fromARGB(255, 248, 237, 210),
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10))),
                             onPressed: () async {
@@ -386,7 +379,7 @@ class _NewAccountState extends State {
                             ),
                             TextButton(
                               onPressed: () {
-                                Navigator.push(
+                                Navigator.pushReplacement(
                                   context,
                                   PageRouteBuilder(
                                     transitionDuration:

@@ -242,7 +242,7 @@ List fooddata = [
     const Info(
     name:"Little Italy",
     discription: "Renowned for its vegetarian Italian cuisine.",
-    assetimage: "assets/food/p20.avif",
+    assetimage: "assets/food/p22.jpeg",
   ),
     const Info(
     name:"Cafe Mosaic",

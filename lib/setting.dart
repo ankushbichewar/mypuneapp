@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -71,7 +70,7 @@ class _SettingsPageState extends State {
               children: [
                 Icon(
                   Icons.volume_up_outlined,
-                  color: const Color.fromARGB(255, 160, 113, 246),
+                  color:  Color.fromARGB(255, 160, 113, 246),
                 ),
                 SizedBox(
                   width: 8,
@@ -162,7 +161,7 @@ class _SettingsPageState extends State {
                       height: 15,
                     ),
                     Text(
-                      "Developer[prasad zadokar] prevaring for PTC Interview 😅",
+                      "My PuneApp coming with new updates",
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.center,
                     )

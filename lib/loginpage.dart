@@ -164,20 +164,13 @@ class _LoginState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 248, 237, 210),
       body: GestureDetector(
         onTap: () {
           FocusScope.of(context).unfocus();
         },
         child: SingleChildScrollView(
-          child: Stack(children: [
-            SizedBox(
-              height: MediaQuery.sizeOf(context).height,
-              width: MediaQuery.sizeOf(context).width,
-              child: Image.asset(
-                "assets/icons/bg.jpg",
-                fit: BoxFit.cover,
-              ),
-            ),
+          child: Column(children: [
             Padding(
               padding: const EdgeInsets.all(42),
               child: Column(
@@ -351,8 +344,8 @@ class _LoginState extends State {
                       ]),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            backgroundColor:
-                                const Color.fromARGB(255, 248, 237, 210),
+                            // backgroundColor:
+                            //     const Color.fromARGB(255, 248, 237, 210),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10))),
                         onPressed: () async {
@@ -362,7 +355,7 @@ class _LoginState extends State {
                           if (await UserInfo.getObject()
                                   .getPassword(userName: userName) ==
                               password) {
-                            Navigator.push(
+                            Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => const Home(),
